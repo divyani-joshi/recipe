@@ -409,7 +409,7 @@ app.get("/" , (req, res) => {
 app.get("/recipes",(req, res) =>{
     return res.send({
         status:true,
-        data: rec 
+        recipes: rec
     })
 })
 
@@ -428,7 +428,7 @@ app.get("/recipes/:id", (req, res) => {
 
     return res.send({
         status:true,
-        data:recipe
+        recipes: rec
     })
 
 })
