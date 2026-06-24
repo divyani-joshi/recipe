@@ -157,7 +157,7 @@
 </div>
 <script>
    async function FetchRecipe(){
-      let data = await (await fetch("https://dummyjson.com/recipes")).json();
+      let data = await (await fetch("https://recipe-msqn.onrender.com/recipes")).json();
       console.log(data);
 
       for(let i=0; i<data["recipes"].length;i++){
@@ -193,7 +193,7 @@
     FetchRecipe();
 
       async function FetchTags(){
-         let data = await (await fetch("https://dummyjson.com/recipes/tags")).json();
+         let data = await (await fetch("https://recipe-msqn.onrender.com/recipes/tags")).json();
          console.log(data);
       for(let i=0; i<data.length;i++){
          document.getElementById("tags").innerHTML += `

@@ -164,7 +164,7 @@
         console.log(tags);
         
         async function Fetchrecipe(params) {
-            let data = await (await fetch(`https://dummyjson.com/recipes/tag/${tags}`)).json();
+            let data = await (await fetch(`https://recipe-msqn.onrender.com/recipes/tag/${tags}`)).json();
             console.log(data)
             for (let i = 0; i < data["recipes"].length; i++) {
 
@@ -199,7 +199,7 @@
         Fetchrecipe();
 
         async function Fetchtag() {
-            let data = await (await fetch("https://dummyjson.com/recipes/tags")).json();
+            let data = await (await fetch("https://recipe-msqn.onrender.com/recipes/tags")).json();
             for (let i = 0; i < data.length; i++) {
                 document.getElementById("tags").innerHTML += ` <li><a href="recipebytag.html?tag=${(data[i])}">${(data[i])}</a></li>`
                 console.log(data)

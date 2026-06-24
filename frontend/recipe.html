@@ -164,7 +164,7 @@ const id = params.get("id");
 console.log("Recipe ID:", id);
   
   async function FetchRecipeDetails(){
-    let recipedetails = await (await fetch (`https://dummyjson.com/recipes/${id}`)).json();
+    let recipedetails = await (await fetch (`https://recipe-msqn.onrender.com/recipes/${id}`)).json();
     console.log(recipedetails);
     let instructions = recipedetails["instructions"];
     
@@ -241,7 +241,7 @@ for (let ingredient of ingredients) {
           </div>
       `;
     }
-let data = await (await fetch(`https://dummyjson.com/recipes`)).json();
+let data = await (await fetch(`https://recipe-msqn.onrender.com/recipes`)).json();
 
 document.getElementById("relatedrecipe").innerHTML = "";
 

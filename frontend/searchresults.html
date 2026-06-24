@@ -158,7 +158,7 @@
     console.log(tag);
 
     async function Fetchrecipe() {
-      let data = await (await fetch(`https://dummyjson.com/recipes/search?q=${tag}`)).json();
+      let data = await (await fetch(`https://recipe-msqn.onrender.com/recipes/search?q=${tag}`)).json();
       console.log(data)
       for (let i = 0; i < data["recipes"].length; i++) {
 

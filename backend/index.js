@@ -406,14 +406,14 @@ app.get("/" , (req, res) => {
     });
 });
 
-app.get("/recipe",(req, res) =>{
+app.get("/recipes",(req, res) =>{
     return res.send({
         status:true,
         data: rec 
     })
 })
 
-app.get("/recipe/:id", (req, res) => {
+app.get("/recipes/:id", (req, res) => {
 
     let id = Number(req.params.id);
 

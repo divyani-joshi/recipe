@@ -177,7 +177,7 @@
 </div>
 <script>
   async function Fetchrecipe() {
-      let data = await(await fetch("https://dummyjson.com/recipes")).json();
+      let data = await(await fetch("https://recipe-msqn.onrender.com/recipes")).json();
       console.log(data)
       for(let i=0;i<data["recipes"].length;i++){
 
