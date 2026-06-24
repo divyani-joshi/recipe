@@ -1,5 +1,5 @@
 let express = require("express");
-
+const cors = require("cors");
 let app = express();
 
 let rec = [
@@ -398,6 +398,9 @@ let rec = [
     }
 
 ];
+app.use(cors({
+    origin: "https://recipe-three-red.vercel.app"
+}));
 
 app.get("/" , (req, res) => {
     return res.send({
